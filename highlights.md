@@ -53,7 +53,9 @@
   + Used to provide a function with specific info it needs to perform the task
 + *Arguments* are like parameters, but they're the information you pass to the function upon calling it
   + Example:
+  
   `function getArea(width, height)` width, height are parameters
+  
   `getArea(3, 5)` 3, 5 are the arguments that are the width, height
   + Can also specify arguments through variable names
 + Functions can return 2+ values using arrays (ex p. 95)
@@ -69,6 +71,7 @@
 
 + Immediately invoked function expressions (IIFE, pronounced iffy)
   + Called once
+  
   `var area = ( function() {
     ...
   }());`
@@ -95,14 +98,17 @@
 
 + Creating objects
   + Object literal is easiest, most common
+  
   `var hotel = {
     name: 'Hilton',
     rooms: 40
   };`
   + Constructor notation, create a new object and use dot notation to add properties/methods
-  `var hotel = new Object();
+ 
+ `var hotel = new Object();
   hotel.name = 'Quay';`
     + Create lots of objects: Can use a function as a template for creating objects
+    
     `//The name of a constructor function starts with a capital letter
     function Hotel(name, rooms) {
       this.name = name;
@@ -111,14 +117,19 @@
     }`
 
 + Dot notation to access properties or methods of objects
+
   `var hotelName = object.property/method name;`
+  
   `var hotelName = hotel.name;`
   + Updating property values
+  
   `hotel.name = 'Park';`
 + Square brackets
-  ` var hotelName = hotel['name'];`
+
+  `var hotelName = hotel['name'];`
   + Used if property/method name uses special characters, name of property is a number, variable is used in place of property name
   + Update property of object
+  
   `hotel['name'] = 'Park';`
   
 **Numbers**
@@ -132,10 +143,10 @@
   
 **Date object**
 + Syntax/oder:
-  Year: 4 digits
-  Month: 0-11 (Jan is 0)
-  Day: 1-31
-  Hour: 0-23
-  Mintes: 0-59
-  Seconds: 0-59
-  Milliseconds: 0-999
+  + Year: 4 digits
+  + Month: 0-11 (Jan is 0)
+  + Day: 1-31
+  + Hour: 0-23
+  + Mintes: 0-59
+  + Seconds: 0-59
+  + Milliseconds: 0-999
